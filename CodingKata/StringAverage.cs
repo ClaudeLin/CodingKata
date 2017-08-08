@@ -21,21 +21,43 @@ namespace CodingKata
 		};
 
 		private const string _emptyInputValue = "n/a";
+        private List<string> _inputString = new List<string>();
 
-		public string GetStringAverage(string inputString)
-		{
-			if (string.IsNullOrEmpty(inputString))
-			{
-				return _emptyInputValue;
-			}
-			var stringNums = ConvertStringToInt(inputString);
+        public string GetStringAverage(string inputString)
+		{            
+            if (!ValidateInputString(inputString))
+            {
+                return _emptyInputValue;
+            }
+
+			var stringNums = ConvertStringToInt();
 
 			return stringIntMapping.FirstOrDefault(x => x.Value == stringNums.Sum()/stringNums.Count).Key;
 		}
 
-		private List<int> ConvertStringToInt(string inputString)
+        private bool ValidateInputString(string inputString)
+        {
+            _inputString = inputString.ToLower().Split(' ').ToList();
+
+            if ( string.IsNullOrEmpty(inputString))
+            {
+                return false;
+            }
+           
+            foreach (var item in _inputString)
+            {
+                if (!stringIntMapping.ContainsKey(item))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        private List<int> ConvertStringToInt()
 		{
-			return inputString.ToLower().Split(' ').Select(str => stringIntMapping[str]).ToList();
+			return _inputString.Select(str => stringIntMapping[str]).ToList();
 		}
 	}
 }
