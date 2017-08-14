@@ -21,7 +21,7 @@ namespace CodingKata
 		};
 
 		private const string _emptyInputValue = "n/a";
-        private List<string> _inputString = new List<string>();
+        private IEnumerable<string> _inputString = new List<string>();
 
         public string GetStringAverage(string inputString)
 		{            
@@ -32,18 +32,18 @@ namespace CodingKata
 
 			var stringNums = ConvertStringToInt();
 
-			return stringIntMapping.FirstOrDefault(x => x.Value == stringNums.Sum()/stringNums.Count).Key;
-		}
+            return stringIntMapping.FirstOrDefault(x => x.Value == stringNums.Sum() / stringNums.Count).Key;
+        }
 
         private bool ValidateInputString(string inputString)
         {
-            _inputString = inputString.ToLower().Split(' ').ToList();
-
             if ( string.IsNullOrEmpty(inputString))
             {
                 return false;
             }
-           
+
+            _inputString = inputString.ToLower().Split(' ').AsEnumerable();
+
             foreach (var item in _inputString)
             {
                 if (!stringIntMapping.ContainsKey(item))
