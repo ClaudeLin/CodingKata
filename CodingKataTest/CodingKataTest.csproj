@@ -73,6 +73,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BandNameGeneratorTest.cs" />
+    <Compile Include="CountingDuplicatesTest.cs" />
     <Compile Include="DeadAntTest.cs" />
     <Compile Include="StringAverageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
