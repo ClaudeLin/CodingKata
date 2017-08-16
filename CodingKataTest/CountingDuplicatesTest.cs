@@ -8,12 +8,13 @@ namespace CodingKataTest
     {
         [Test]
         [TestCase("", 0)]
-        //[TestCase(null, 0)]
-        //[TestCase("abcde", 0)]
-        //[TestCase("aabbcde", 2)]
-        //[TestCase("aabBcde", 2,"","should ignore case")]
-        //[TestCase("Indivisibility", 1)]
-        //[TestCase("Indivisibilities", 2,"", "characters may not be adjacent")]
+        [TestCase(null, 0)]
+        [TestCase("abcde", 0)]
+        [TestCase("aabbcde", 2)]
+        [TestCase("aabBcde", 2)]
+        [TestCase("Indivisibility", 1)]
+        [TestCase("Indivisibilities", 2)]
+        [TestCase("aaabbbdddCCceEe",5)]
         public void Input_String_Counting_Duplicates_As_expected(string inputString, int expected)
         {
             var target = new CountingDuplicates();
