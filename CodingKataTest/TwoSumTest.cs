@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using CodingKata;
+﻿using CodingKata;
 using NUnit.Framework;
 
 namespace CodingKataTest
