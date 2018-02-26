@@ -188,3 +188,5 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 /.vs/CodingKata/v15/sqlite3/storage.ide
+/.vs/CodingKata/v15/Server/sqlite3
+/.vs/CodingKata/v15/sqlite3
