@@ -43,6 +43,7 @@
     <Compile Include="CountingDuplicates.cs" />
     <Compile Include="DeadAnt.cs" />
     <Compile Include="NextBiggerNumber.cs" />
+    <Compile Include="ROT13.cs" />
     <Compile Include="StringAverage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThreeSum.cs" />
