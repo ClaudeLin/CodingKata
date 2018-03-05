@@ -6,7 +6,6 @@ namespace CodingKata
 {
     public class ROT13
     {
-       
         private string input;
         private Dictionary<string, string> ROT13LookUp = new Dictionary<string, string>();
 
@@ -48,14 +47,13 @@ namespace CodingKata
 
         public string GetResult()
         {
-            var inputs = this.input.ToCharArray();
+            var inputs = input.ToCharArray();
 
             var result = new StringBuilder();
             string temp;
             foreach (var inputchar in inputs)
             {
-                var point = Convert.ToInt32(inputchar);
-                if ((point >= 65 && point <= 90) || (point >= 97 && point <= 122))
+                if (char.IsLetter(inputchar))
                 {
                     if (char.IsLower(inputchar))
                     {
