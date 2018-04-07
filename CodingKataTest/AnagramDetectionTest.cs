@@ -18,5 +18,16 @@ namespace CodingKataTest
 
             Assert.IsTrue(actual);
         }
+
+        [Test]
+        [TestCase("apple", "pale")]
+        public void IsNotAnagram(string test, string original)
+        {
+            var target = new AnagramDetection();
+
+            var actual = target.IsAnagram(test, original);
+
+            Assert.IsFalse(actual);
+        }
     }
 }
