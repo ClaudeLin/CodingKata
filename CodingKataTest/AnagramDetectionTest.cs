@@ -7,12 +7,13 @@ namespace CodingKataTest
     public class AnagramDetectionTest
     {
         [Test]
-        public void IsAnagram()
+        [TestCase("foefet", "toffee")]
+        [TestCase("Buckethead", "DeathCubeK")]
+        [TestCase("Twoo", "Woot")]
+        public void IsAnagram(string test, string original)
         {
             var target = new AnagramDetection();
-
-            var test = "A";
-            var original = "A";
+          
             var actual = target.IsAnagram(test, original);
 
             Assert.IsTrue(actual);
