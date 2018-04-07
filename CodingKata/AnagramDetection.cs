@@ -7,16 +7,13 @@ namespace CodingKata
         public bool IsAnagram(string test, string original)
         {
             var result = test.ToLower().ToCharArray().ToList();
-            foreach (var c2 in original.ToLower().ToCharArray())
+            foreach (var c in original.ToLower().ToCharArray())
             {
-                if (result.Contains(c2))
-                {
-                    result.Remove(c2);
-                }
-                else
+                if (!result.Contains(c))
                 {
                     return false;
                 }
+                result.Remove(c);
             }
             return result.Count == 0;
         }
