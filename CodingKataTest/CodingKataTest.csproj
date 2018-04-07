@@ -75,10 +75,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AnagramDetectionTest.cs" />
     <Compile Include="BandNameGeneratorTest.cs" />
     <Compile Include="CountingDuplicatesTest.cs" />
     <Compile Include="DeadAntTest.cs" />
     <Compile Include="NextBiggerNumberTest.cs" />
+    <Compile Include="NextSmallerNumberTest.cs" />
     <Compile Include="ROT13Test.cs" />
     <Compile Include="StringAverageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

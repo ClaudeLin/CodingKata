@@ -39,10 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnagramDetection.cs" />
     <Compile Include="BandNameGenerator.cs" />
     <Compile Include="CountingDuplicates.cs" />
     <Compile Include="DeadAnt.cs" />
     <Compile Include="NextBiggerNumber.cs" />
+    <Compile Include="NextSmallerNumber.cs" />
     <Compile Include="ROT13.cs" />
     <Compile Include="StringAverage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
