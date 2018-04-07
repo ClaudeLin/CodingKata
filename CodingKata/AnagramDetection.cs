@@ -6,6 +6,11 @@ namespace CodingKata
     {
         public bool IsAnagram(string test, string original)
         {
+            if (test.Length != original.Length)
+            {
+                return false;
+            }
+
             var result = test.ToLower().ToCharArray().ToList();
             foreach (var c in original.ToLower().ToCharArray())
             {
