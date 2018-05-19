@@ -45,6 +45,7 @@
     <Compile Include="DeadAnt.cs" />
     <Compile Include="NextBiggerNumber.cs" />
     <Compile Include="NextSmallerNumber.cs" />
+    <Compile Include="ReverseWords.cs" />
     <Compile Include="ROT13.cs" />
     <Compile Include="StringAverage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
