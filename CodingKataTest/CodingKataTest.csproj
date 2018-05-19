@@ -79,6 +79,7 @@
     <Compile Include="BandNameGeneratorTest.cs" />
     <Compile Include="CountingDuplicatesTest.cs" />
     <Compile Include="DeadAntTest.cs" />
+    <Compile Include="MultiplesOf3or5Test.cs" />
     <Compile Include="NextBiggerNumberTest.cs" />
     <Compile Include="NextSmallerNumberTest.cs" />
     <Compile Include="ReverseWordsTest.cs" />

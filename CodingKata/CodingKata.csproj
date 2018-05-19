@@ -43,6 +43,7 @@
     <Compile Include="BandNameGenerator.cs" />
     <Compile Include="CountingDuplicates.cs" />
     <Compile Include="DeadAnt.cs" />
+    <Compile Include="MultiplesOf3or5.cs" />
     <Compile Include="NextBiggerNumber.cs" />
     <Compile Include="NextSmallerNumber.cs" />
     <Compile Include="ReverseWords.cs" />
