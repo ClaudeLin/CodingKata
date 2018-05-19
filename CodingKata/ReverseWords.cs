@@ -12,16 +12,14 @@ namespace CodingKata
             {
                 return str;
             }
-            var words = str.Split(' ');
             var results = new List<string>();
-            char[] temp;
-            foreach (var word in words)
+            foreach (var word in str.Split(' '))
             {
-                temp = word.ToCharArray();
+                var temp = word.ToCharArray();
                 Array.Reverse(temp);
                 results.Add(new string(temp));
             }
-            return results.Aggregate(string.Empty, (current, result) => current + " " + result).Substring(1);
+            return results.Aggregate(string.Empty, (current, result) => current + " " + result).Trim();
         }
     }
 }
